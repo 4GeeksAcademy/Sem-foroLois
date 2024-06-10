@@ -1,6 +1,6 @@
 //import react into the bundle
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom"; //Renderizar los componentes de React en el DOM.
 
 // include your styles into the webpack bundle
 import "../styles/index.css";
