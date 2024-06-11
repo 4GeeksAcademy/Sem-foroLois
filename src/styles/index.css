@@ -10,26 +10,34 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-
 .traffic-light-container { /*  Carcasa */
     width: 140px; /* Ancho del contenedor */
-    height: 400px; /* Alto del contenedor */
+    height: 520px; /* Alto del contenedor */
     background-color: black; /* Color de fondo de la carcasa */
     padding: 20px; /* Espacio alrededor del semáforo */
     border-radius: 20px; /* Bordes redondeados */
-    position: relative; /* Posición relativa para posicionar las luces */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 /*  En el JSX, estás utilizando clases como "light, "green", "red", yellow", y "active" para aplicar estilos específicos a cada luz del semáforo */
 .light.red.active {
-    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5); /* Sombras rojas */
-  }
-  
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5); /* sombras */
+}
+
 .light.yellow.active {
-    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5); /* Sombras amarillas */
-  }
-  
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5); 
+}
+
 .light.green.active {
-    box-shadow: 0 0 20px 10px rgba(0, 128, 0, 0.5); /* Sombras verdes */
-  }
-  
+  box-shadow: 0 0 20px 10px rgba(0, 128, 0, 0.5); 
+}
+
+.light.purple {
+  background-color: purple; /* Color de fondo para el círculo púrpura */
+}
+
+.light.purple.active {
+  box-shadow: 0 0 20px 10px rgba(128, 0, 128, 0.5);
+}
